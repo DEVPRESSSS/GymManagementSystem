@@ -1,0 +1,171 @@
+﻿<Window x:Class="GymManagementSystem.ViewModel.LoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GymManagementSystem.ViewModel"
+        mc:Ignorable="d"
+        Title="LoginPage" 
+        Height="457"
+        Width="705"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        MouseDown="Window_MouseDown"        
+        >
+    <Grid>
+
+        <!--First border-->
+        <Border  Background="Transparent">
+
+
+            <!--Secod border-->
+            <Border Background="#F4F5F6" BorderThickness="3" >
+
+
+
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+
+
+
+                        <!--First row that holds the min,max,close button (columns)-->
+
+
+                        <!--Second row-->
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+
+
+
+
+                    <!--Grid for second row-->
+                    <Grid Grid.Row="0">
+
+                        <!--Grid for column definition-->
+                        <Grid.ColumnDefinitions>
+
+                            <!--First column-->
+                            <ColumnDefinition />
+
+                            <!--Second column-->
+                            <ColumnDefinition/>
+
+                        </Grid.ColumnDefinitions>
+
+
+                        <!--Grid for the column 1-->
+                        <Grid Grid.Row="0" Grid.Column="1">
+
+
+
+                            <Grid.RowDefinitions>
+
+                                <!--Row that holds the the three columns-->
+                                <RowDefinition Height="30"/>
+                                <RowDefinition/>
+
+                            </Grid.RowDefinitions>
+
+                            <!--Border for the row 1-->
+                            <Border BorderBrush="Black" 
+                                    Grid.Row="0"
+                                    >
+
+                            </Border>
+
+
+                            <Grid>
+
+
+                                <Grid.ColumnDefinitions>
+
+
+                                    <!--Minimize button column-->
+                                    <ColumnDefinition/>
+
+                                    <!--Maximize button column-->
+                                    <ColumnDefinition/>
+
+                                    <!--Close button column-->
+                                    <ColumnDefinition/>
+
+                                </Grid.ColumnDefinitions>
+
+                            </Grid>
+
+                            <!--Logo -->
+                            <Image Grid.Row="1"
+                                   Source="D:\GYMMANAGEMENTSYSTEM\Resources\Images\logobg.png"
+                                   Width="100"
+                                   Height="100" RenderTransformOrigin="0.515,0.068" Margin="125,9,124,312"/>
+
+
+
+                        </Grid>
+
+
+
+                        <!--Image for the first column of row 2-->
+                        <Image Grid.Row="1"
+                           Grid.Column="0"
+                           HorizontalAlignment="Left" Stretch="Fill"
+                           Source="D:\GYMMANAGEMENTSYSTEM\Resources\Images\cbum.png"/>
+
+                        <!--Username textbox-->
+
+                        <TextBox x:Name="Usernametxt" Grid.Column="1"
+                                 Style="{StaticResource TextBoxes}" 
+                                 Margin="80,213,73,213"/>
+
+                        <!--Passwordbox-->
+
+
+                        <PasswordBox x:Name="Passwordtxt" Grid.Column="1" 
+                                     Style="{StaticResource PasswordBoxes}" 
+                                     Margin="80,265,73,161"/>
+
+
+
+
+                        <!--Login button-->
+
+                        <Button Grid.Column="1" 
+                                Style="{StaticResource SubmitButton}" 
+                                Margin="0,305,73,106" 
+                                Width="196"
+                                Content="Login"
+                                BorderThickness="0"
+                                />
+
+
+                    </Grid>
+
+
+
+
+
+
+
+
+
+
+
+                </Grid>
+
+
+
+            </Border>
+
+
+
+
+
+        </Border>
+    </Grid>
+</Window>
