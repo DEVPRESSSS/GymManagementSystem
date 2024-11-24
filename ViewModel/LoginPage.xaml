@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GymManagementSystem.ViewModel"
+        xmlns:local="clr-namespace:GymManagementSystem.ViewModel" xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
         Title="LoginPage" 
         Height="457"
@@ -96,6 +96,17 @@
                                     <ColumnDefinition/>
 
                                 </Grid.ColumnDefinitions>
+                                <Icon:PackIconMaterial 
+                                      Kind="Close" 
+                                      Grid.Column="2"
+                                      VerticalAlignment="Center"
+                                      Margin="0,0,6,0"
+                                      Height="10" RenderTransformOrigin="0.803,0.533"
+                                      HorizontalAlignment="Right"
+                                      Width="16"
+                                      MouseDown="PackIconMaterial_MouseDown"
+                                  />
+    
 
                             </Grid>
 
@@ -117,31 +128,110 @@
                            HorizontalAlignment="Left" Stretch="Fill"
                            Source="D:\GYMMANAGEMENTSYSTEM\Resources\Images\cbum.png"/>
 
+
+                        <TextBlock Grid.Column="1"
+                                   Text="Welcome" 
+                                   Height="20"
+                                   Margin="150,142,144,289"
+                                   FontWeight="DemiBold"/>
+
                         <!--Username textbox-->
 
-                        <TextBox x:Name="Usernametxt" Grid.Column="1"
+                        <TextBox x:Name="Usernametxt" 
+                                 Grid.Column="1"
                                  Style="{StaticResource TextBoxes}" 
-                                 Margin="80,213,73,213"/>
+                                 Margin="80,213,73,213"
+                                 MaxLength="30"
+                                 BorderBrush="#727272" 
+                                 TextChanged="Usernametxt_TextChanged"
+                                 />
+
+                        <!--Error message textblock in username-->
+
+                        <TextBlock x:Name="UsernameErrorMessage"
+                             Grid.Column="1"
+                             Width="100"
+                             Margin="134,239,115,200"
+                             Foreground="Red"
+                             FontSize="8"
+                              />
+
+                        <!-- Icon in username -->
+
+                        <Icon:PackIconMaterial Kind="Account" Margin="60,222,0,0" Grid.Column="1"/>
+
 
                         <!--Passwordbox-->
 
 
                         <PasswordBox x:Name="Passwordtxt" Grid.Column="1" 
                                      Style="{StaticResource PasswordBoxes}" 
-                                     Margin="80,265,73,161"/>
+                                     Margin="80,265,73,161"
+                                     MaxLength="24"
+                                     BorderBrush="#727272" 
+                                     PasswordChanged="Passwordtxt_PasswordChanged"
+                                     />
+
+                        <!--Error message textblock in password-->
+
+                        <TextBlock x:Name="PasswordErrorMessage"
+                             Grid.Column="1"
+                             Margin="134,291,115,148"
+                             Foreground="Red"
+                             FontSize="8"
+                              />
 
 
+
+                        <!--Password textbox-->
+
+                        <TextBox x:Name="PasswordUnmask" 
+                          Grid.Column="1"
+                          Style="{StaticResource TextBoxes}" 
+                          Margin="80,265,73,161"
+                          MaxLength="30"
+                          Visibility="Collapsed"
+                          BorderBrush="#727272" 
+
+                          />
+
+                        <!-- Icon in username -->
+
+                        <Icon:PackIconMaterial Kind="Lock" Margin="60,274,0,0" Grid.Column="1"/>
+
+                        <Icon:PackIconMaterial x:Name="Eye" Kind="Eye" Margin="260,274,0,0" Grid.Column="1" 
+                                               RenderTransformOrigin="4,1.875"
+                                               Height="8" 
+                                               Width="16"
+                                               MouseDown="Eye_MouseDown"
+                                               Visibility="Hidden"
+
+                                               />
+
+
+                        <Label x:Name="forgotpassword" 
+                               Content="forgot password"
+                               FontSize="9"
+                               FontStyle="Italic" Grid.Column="1" 
+                               Margin="204,291,68,135"
+                               HorizontalContentAlignment="Right"
+                               MouseDown="forgotpassword_MouseDown"
+                               />
 
 
                         <!--Login button-->
 
-                        <Button Grid.Column="1" 
+                        <Button x:Name="LoginBtn" Grid.Column="1" 
                                 Style="{StaticResource SubmitButton}" 
-                                Margin="0,305,73,106" 
+                                Margin="0,321,73,105" 
                                 Width="196"
                                 Content="Login"
                                 BorderThickness="0"
+                                Click="LoginBtn_Click"
                                 />
+
+
+
 
 
                     </Grid>

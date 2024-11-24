@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\GYMMANAGEMENTSYSTEM\App.xaml
-32023207356
+4-873793971
 
-6-374819414
-198915248976
-Login.xaml;MainWindow.xaml;ViewModel\LoginPage.xaml;
+7-287549609
+236-1680472434
+Login.xaml;MainWindow.xaml;ViewModel\ForgotPassword.xaml;ViewModel\LoginPage.xaml;
 
 False
 
