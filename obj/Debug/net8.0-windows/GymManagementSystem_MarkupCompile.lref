@@ -1,7 +1,8 @@
 ﻿
 FD:\GYMMANAGEMENTSYSTEM\App.xaml;;
-FD:\GYMMANAGEMENTSYSTEM\Login.xaml;;
 FD:\GYMMANAGEMENTSYSTEM\MainWindow.xaml;;
+FD:\GYMMANAGEMENTSYSTEM\ViewModel\ChangePassword.xaml;;
 FD:\GYMMANAGEMENTSYSTEM\ViewModel\ForgotPassword.xaml;;
 FD:\GYMMANAGEMENTSYSTEM\ViewModel\LoginPage.xaml;;
+FD:\GYMMANAGEMENTSYSTEM\ViewModel\Dashboard.xaml;;
 

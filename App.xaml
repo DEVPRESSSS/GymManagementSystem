@@ -90,5 +90,48 @@
             </Style.Triggers>
         </Style>
 
+
+
+        <!-- Menu Button template-->
+        <Style x:Key="menuButton" TargetType="Button">
+            <Setter Property="Background" Value="#F4F5F6"/>
+            <Setter Property="Foreground" Value="#313638"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="15 3"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                        CornerRadius="7" 
+                        BorderBrush="Transparent" 
+                        BorderThickness="1">
+                            <ContentPresenter VerticalAlignment="Center" 
+                                      HorizontalAlignment="Left"
+                                      ContentSource="Content"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#313622"/>
+                    <Setter Property="Foreground" Value="#F4F5F6"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+
+
+
+
+        <Style x:Key="menuButtonIcon" TargetType="Icon:PackIconMaterial">
+            <Setter Property="Margin" Value="20 2 20 0" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Width" Value="15" />
+            <Setter Property="Height" Value="15" />
+        </Style>
+
     </Application.Resources>
 </Application>

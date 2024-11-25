@@ -45,5 +45,15 @@ namespace GymManagementSystem.ViewModel
                 DragMove();
             }
         }
+
+        private void SendOTP_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            ChangePassword changePassword = new ChangePassword();
+            changePassword.Show();
+
+            this.Hide();
+        }
     }
 }

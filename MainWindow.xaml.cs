@@ -20,5 +20,29 @@ namespace GymManagementSystem
         {
             InitializeComponent();
         }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+
+            if(e.LeftButton== MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void PackIconMaterial_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+
+            MessageBoxResult msg= MessageBox.Show("Are you sure you want to exit?","Confirmation",MessageBoxButton.YesNo,MessageBoxImage.Question);
+
+
+            if (msg == MessageBoxResult.Yes)
+            {
+
+                Application.Current.Shutdown(0);
+            }
+        }
     }
 }

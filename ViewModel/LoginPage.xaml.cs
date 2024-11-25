@@ -41,9 +41,9 @@ namespace GymManagementSystem.ViewModel
 
         private void Passwordtxt_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            if (Passwordtxt.Password.Length > 0) // Check if the password field is not empty
+            if (Passwordtxt.Password.Length > 0) 
             {
-                Eye.Visibility = Visibility.Visible; // Show the eye icon
+                Eye.Visibility = Visibility.Visible; 
                 PasswordErrorMessage.Text = "";
                 Passwordtxt.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#727272"));
                 Passwordtxt.BorderThickness = new Thickness(0, 0, 0, 2);
@@ -157,32 +157,44 @@ namespace GymManagementSystem.ViewModel
         private void ClearTextBoxes()
         {
 
+            //Cleart the username textbox
             Usernametxt.Text = "";
+
+            //Clear the password box
             Passwordtxt.Password = "";
 
+            //Set the passwordUnmask to hidden
             PasswordUnmask.Visibility = Visibility.Hidden;
+
+            //Set the passwordtxt to be visible
             Passwordtxt.Visibility = Visibility.Visible;
             
 
         }
 
-        private void Unhide()
-        {
-
-
-        }
+      
 
         private void forgotpassword_MouseDown(object sender, MouseButtonEventArgs e)
         {
 
+            //this will open the forgot password if the user clicks it
 
+
+            //Declare an instance of forgotpassword
+           
             ForgotPassword forgotPassword = new ForgotPassword();
+
+            //call the show method to show the form
             forgotPassword.Show();
+
+            //close the login form
             this.Hide();
         }
 
         private void PackIconMaterial_MouseDown(object sender, MouseButtonEventArgs e)
         {
+
+            //This will close the application if the user clicks it
             Application.Current.Shutdown();
         }
     }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\GYMMANAGEMENTSYSTEM\App.xaml
-4-873793971
+5-830731439
 
-9823990707
+101156105011
 236-1680472434
-Login.xaml;MainWindow.xaml;ViewModel\ForgotPassword.xaml;ViewModel\LoginPage.xaml;
+MainWindow.xaml;ViewModel\ChangePassword.xaml;ViewModel\Dashboard.xaml;ViewModel\ForgotPassword.xaml;ViewModel\LoginPage.xaml;
 
-False
+True
 
