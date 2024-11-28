@@ -1,10 +1,7 @@
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\GymManagementSystem.exe
-D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\GymManagementSystem.dll
-D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Core.dll
-D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Material.dll
-D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\System.Text.Json.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\GymManagementSystem.deps.json
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\GymManagementSystem.runtimeconfig.json
+D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\GymManagementSystem.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\GymManagementSystem.pdb
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.BootstrapIcons.dll
@@ -12,6 +9,7 @@ D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.BoxIcons
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.CircumIcons.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Codicons.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Coolicons.dll
+D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Core.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Entypo.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.EvaIcons.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.FeatherIcons.dll
@@ -24,6 +22,7 @@ D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.GameIcon
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Ionicons.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.JamIcons.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Lucide.dll
+D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Material.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MaterialDesign.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MaterialLight.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.MemoryIcons.dll
@@ -42,9 +41,12 @@ D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Unicons.
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.VaadinIcons.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.WeatherIcons.dll
 D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Zondicons.dll
+D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\System.Text.Json.dll
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\GymManagementSystem.csproj.AssemblyReference.cache
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\ChangePassword.g.cs
+D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\Dashboard.g.cs
+D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\Employee.g.cs
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\ForgotPassword.g.cs
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\LoginPage.g.cs
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\App.g.cs
@@ -53,6 +55,8 @@ D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\GymManagementSystem_MarkupCompil
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\App.baml
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\MainWindow.baml
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\ChangePassword.baml
+D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\Dashboard.baml
+D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\Employee.baml
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\ForgotPassword.baml
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\LoginPage.baml
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\GymManagementSystem.g.resources
@@ -67,5 +71,5 @@ D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\refint\GymManagementSystem.dll
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\GymManagementSystem.pdb
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\GymManagementSystem.genruntimeconfig.cache
 D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ref\GymManagementSystem.dll
-D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\Dashboard.g.cs
-D:\GYMMANAGEMENTSYSTEM\obj\Debug\net8.0-windows\ViewModel\Dashboard.baml
+D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\LiveCharts.dll
+D:\GYMMANAGEMENTSYSTEM\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll

@@ -13,6 +13,9 @@
     <Compile Update="ViewModel\Dashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ViewModel\Employee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ViewModel\ForgotPassword.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewModel\Dashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewModel\Employee.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewModel\ForgotPassword.xaml">

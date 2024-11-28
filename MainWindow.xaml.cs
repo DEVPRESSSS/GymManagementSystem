@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using GymManagementSystem.ViewModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,8 @@ namespace GymManagementSystem
         public MainWindow()
         {
             InitializeComponent();
+            MainContentArea.Content = new Dashboard();
+
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -43,6 +46,69 @@ namespace GymManagementSystem
 
                 Application.Current.Shutdown(0);
             }
+        }
+
+     
+
+        private void Dashboard_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            //it opens the usercontrol named Dashboard
+            MainContentArea.Content= new Dashboard();
+        }
+
+        private void Employee_Click(object sender, RoutedEventArgs e)
+        {
+            //it opens the usercontrol named Employee
+            MainContentArea.Content = new Employee();
+        }
+
+        private void Members_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Attendance_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Payments_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Equipments_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Settings_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MaximizeWindow_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+            if( WindowState== WindowState.Maximized )
+            {
+
+                WindowState = WindowState.Normal;
+            }
+            else
+            {
+                WindowState= WindowState.Maximized;
+            }
+        }
+
+        private void MinimizeWindow_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        //This will minimize the Window if the user Clicks it
+           WindowState = WindowState.Minimized;
+
         }
     }
 }
