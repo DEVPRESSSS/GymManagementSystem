@@ -89,26 +89,39 @@ namespace GymManagementSystem
 
         }
 
-        private void MaximizeWindow_MouseDown(object sender, MouseButtonEventArgs e)
+       
+        private void Minimize_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
         {
 
-            if( WindowState== WindowState.Maximized )
+            MessageBoxResult dialogResult= MessageBox.Show("Are you sure you want to close the application?","Confirmation",MessageBoxButton.YesNo,MessageBoxImage.Question); 
+
+
+            if (dialogResult == MessageBoxResult.Yes)
             {
 
-                WindowState = WindowState.Normal;
+                Application.Current.Shutdown(0);
+
+
+            }
+
+        }
+
+        private void Maximize_Click(object sender, RoutedEventArgs e)
+        {
+
+            if(WindowState == WindowState.Normal)
+            {
+                WindowState = WindowState.Maximized;
             }
             else
             {
-                WindowState= WindowState.Maximized;
+                WindowState = WindowState.Normal;
             }
-        }
-
-        private void MinimizeWindow_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-
-        //This will minimize the Window if the user Clicks it
-           WindowState = WindowState.Minimized;
-
         }
     }
 }

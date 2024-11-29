@@ -59,6 +59,9 @@ namespace GymManagementSystem.ViewModel
 
             if(Passwordtxt.Visibility== Visibility.Visible)
             {
+                Eye.Visibility = Visibility.Collapsed;
+                Eye2.Visibility = Visibility.Visible;
+
                 PasswordUnmask.Text = Passwordtxt.Password;
                 PasswordUnmask.Visibility = Visibility.Visible;
                 Passwordtxt.Visibility = Visibility.Hidden;
@@ -196,6 +199,38 @@ namespace GymManagementSystem.ViewModel
 
             //This will close the application if the user clicks it
             Application.Current.Shutdown();
+        }
+
+        private void Eye2_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+            if (PasswordUnmask.Visibility == Visibility.Visible)
+            {
+                Eye.Visibility = Visibility.Visible;
+                Eye2.Visibility = Visibility.Collapsed;
+
+                Passwordtxt.Password = PasswordUnmask.Text;
+                Passwordtxt.Visibility = Visibility.Visible;
+                PasswordUnmask.Visibility = Visibility.Hidden;
+
+            }
+        }
+
+        private void PasswordUnmask_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(PasswordUnmask.Text.Length == 0)
+            {
+
+                Eye2.Visibility = Visibility.Hidden;
+
+
+            }
+            else
+            {
+
+                Eye2.Visibility = Visibility.Visible;
+
+            }
         }
     }
 }

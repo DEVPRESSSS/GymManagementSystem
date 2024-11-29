@@ -106,7 +106,7 @@
                                       Width="16"
                                       MouseDown="PackIconMaterial_MouseDown"
                                   />
-    
+
 
                             </Grid>
 
@@ -192,6 +192,7 @@
                           MaxLength="30"
                           Visibility="Collapsed"
                           BorderBrush="#727272" 
+                                 TextChanged="PasswordUnmask_TextChanged"
 
                           />
 
@@ -205,9 +206,18 @@
                                                Width="16"
                                                MouseDown="Eye_MouseDown"
                                                Visibility="Hidden"
-
+                                                
                                                />
 
+
+
+                        <Icon:PackIconMaterial x:Name="Eye2" Kind="EyeOff" Margin="258,274,0,0" Grid.Column="1" 
+                               RenderTransformOrigin="4,1.875"
+                               Height="10" 
+                               Width="18"
+                               MouseDown="Eye2_MouseDown"
+                               Visibility="Collapsed"
+                               />
 
                         <Label x:Name="forgotpassword" 
                                Content="forgot password"
