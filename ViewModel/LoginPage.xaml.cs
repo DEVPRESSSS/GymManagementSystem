@@ -194,12 +194,7 @@ namespace GymManagementSystem.ViewModel
             this.Hide();
         }
 
-        private void PackIconMaterial_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-
-            //This will close the application if the user clicks it
-            Application.Current.Shutdown();
-        }
+      
 
         private void Eye2_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -231,6 +226,22 @@ namespace GymManagementSystem.ViewModel
                 Eye2.Visibility = Visibility.Visible;
 
             }
+        }
+
+        private void CloseBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+            MessageBoxResult dialogResult = MessageBox.Show("Are you sure you want to close the application?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+
+            if (dialogResult == MessageBoxResult.Yes)
+            {
+
+                Application.Current.Shutdown(0);
+
+
+            }
+
         }
     }
 }

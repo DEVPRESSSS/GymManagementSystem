@@ -96,16 +96,29 @@
                                     <ColumnDefinition/>
 
                                 </Grid.ColumnDefinitions>
-                                <Icon:PackIconMaterial 
-                                      Kind="Close" 
-                                      Grid.Column="2"
-                                      VerticalAlignment="Center"
-                                      Margin="0,0,6,0"
-                                      Height="10" RenderTransformOrigin="0.803,0.533"
-                                      HorizontalAlignment="Right"
-                                      Width="16"
-                                      MouseDown="PackIconMaterial_MouseDown"
-                                  />
+
+
+
+
+                                <Button x:Name="CloseBtn"
+                                    Style="{StaticResource MinimizeButtonStyle}"
+                                    Grid.Column="2"
+                                    HorizontalAlignment="Right"
+                                    Margin="0,0,4,0"
+                                    Cursor="Hand"
+                                    Click="CloseBtn_Click">
+
+
+                                    <Icon:PackIconMaterial 
+                                         Kind="Close" 
+                                         VerticalAlignment="Center"
+                                         Height="10"
+                                         HorizontalAlignment="Right"
+                                         Width="16"
+                                     />
+
+                                </Button>
+                             
 
 
                             </Grid>
@@ -143,7 +156,7 @@
                                  Margin="80,213,73,213"
                                  MaxLength="30"
                                  BorderBrush="#727272" 
-                                 TextChanged="Usernametxt_TextChanged"
+                                 TextChanged="Usernametxt_TextChanged"                               
                                  />
 
                         <!--Error message textblock in username-->
